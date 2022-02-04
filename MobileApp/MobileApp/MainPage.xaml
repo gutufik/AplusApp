@@ -4,7 +4,7 @@
              x:Class="MobileApp.MainPage">
 
     <StackLayout VerticalOptions="CenterAndExpand">
-        <Image Source="logo.png" Aspect="AspectFit"/>
+        <Image Source="images/logo.jpg" Aspect="AspectFit"/>
 
         <StackLayout>
             <StackLayout>

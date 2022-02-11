@@ -1,8 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobileApp.AddProjectPage"
-             Visual="Material">
+             x:Class="MobileApp.EditProjectPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Order="Primary">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource FontFamily="Material"
+					Glyph="&#xe872;" />
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
             <StackLayout>
@@ -14,9 +21,8 @@
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <Button Text="Отмена"/>
-                <Button Text="Добавить"/>
+                <Button Text="Изменить"/>
             </StackLayout>
         </StackLayout>
-        
     </ContentPage.Content>
 </ContentPage>

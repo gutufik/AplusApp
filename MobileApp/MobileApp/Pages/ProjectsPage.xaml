@@ -3,16 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobileApp.ProjectsPage"
              Visual="Material">
-    <NavigationPage.TitleView  >
-        <StackLayout Orientation="Horizontal"  HorizontalOptions="CenterAndExpand">
-            <Label   Text="&#xe145;"
-                 FontFamily="Material"
-                     TextColor="white" FontSize="Large"/>
-        </StackLayout>
-
-    </NavigationPage.TitleView>
     <ContentPage.ToolbarItems>
-        <ToolbarItem IconImageSource="Fill.png" Priority="0" Order="Primary" Text=""/>
+        <ToolbarItem Order="Primary" Clicked="AddProjectClicked">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource FontFamily="Material"
+					Glyph="&#xe145;" />
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
 

@@ -20,7 +20,6 @@ namespace MobileApp
         {
             InitializeComponent();
             Projects = App.Database.GetProjects();
-            FillList();
             this.BindingContext = this;
         }
 
@@ -32,6 +31,11 @@ namespace MobileApp
         private async void lwProjectsItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             await Navigation.PushAsync(new SelectedProjectPage(lwProjects.SelectedItem.ToString()));
+        }
+
+        private async void AddProjectClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AddProjectPage());
         }
     }
 }

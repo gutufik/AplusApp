@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace MobileApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AddProjectPage : ContentPage
+    public partial class EditProjectPage : ContentPage
     {
-        public AddProjectPage()
+        public EditProjectPage()
         {
             InitializeComponent();
         }

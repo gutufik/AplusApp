@@ -17,5 +17,10 @@ namespace MobileApp
             InitializeComponent();
             Title = projectName;
         }
+
+        private async void EditProjectClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new EditProjectPage());
+        }
     }
 }

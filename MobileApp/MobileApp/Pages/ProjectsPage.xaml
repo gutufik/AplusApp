@@ -1,9 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobileApp.ProjectsPage">
+             x:Class="MobileApp.ProjectsPage"
+             Visual="Material">
+    <NavigationPage.TitleView  >
+        <StackLayout Orientation="Horizontal"  HorizontalOptions="CenterAndExpand">
+            <Label   Text="&#xe145;"
+                 FontFamily="Material"
+                     TextColor="white" FontSize="Large"/>
+        </StackLayout>
+
+    </NavigationPage.TitleView>
     <ContentPage.ToolbarItems>
-        <ToolbarItem IconImageSource="Fill.png" Priority="0" Order="Primary"/>
+        <ToolbarItem IconImageSource="Fill.png" Priority="0" Order="Primary" Text=""/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
 

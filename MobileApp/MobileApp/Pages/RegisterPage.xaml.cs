@@ -24,7 +24,7 @@ namespace MobileApp
                 Email = emailEntry.Text,
                 Password = passwordEntry.Text
             };
-            App.Database.SaveItem(user);
+            App.Database.AddUser(user);
 
             await Navigation.PopAsync();
         }

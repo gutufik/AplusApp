@@ -22,8 +22,8 @@ namespace MobileApp
 
         private async void btnLoginClicked(object sender, EventArgs e)
         {
-            var user = App.Database.GetItems().Where(u => u.Login == loginEntry.Text && u.Password == passwordEntry.Text).ToList();
-            if ( user.Count != 0)
+            var users = App.Database.GetUsers().Where(u => u.Login == loginEntry.Text && u.Password == passwordEntry.Text).ToList();
+            if ( users.Count != 0)
             {
                 await Navigation.PushAsync(new ProjectsPage());
             }    

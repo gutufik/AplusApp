@@ -3,6 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:local="clr-namespace:MobileApp"
              x:Class="MobileApp.SelectedProjectPage">
+    <NavigationPage.TitleView >
+        <StackLayout Orientation="Horizontal"  HorizontalOptions="EndAndExpand">
+            <Label   Text="&#xe254;"
+                 FontFamily="Material"
+                     TextColor="white" FontSize="Large"/>
+        </StackLayout>
+
+    </NavigationPage.TitleView>
     <TabbedPage.Children>
         <local:AboutProjectPage Title="О проекте"/>
         <local:ImagesPage Title="Картинки"/>

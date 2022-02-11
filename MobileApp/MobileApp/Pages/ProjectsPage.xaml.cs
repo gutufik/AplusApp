@@ -7,27 +7,26 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using MobileApp.DataBase;
 
 namespace MobileApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ProjectsPage : ContentPage
     {
-        public List<string> Projects { get; set; }
+        public IEnumerable<Project> Projects { get; set; }
+        //public List<string> Projects { get; set; }
         public ProjectsPage()
         {
             InitializeComponent();
-            Projects = new List<string>();
+            Projects = App.Database.GetProjects();
             FillList();
             this.BindingContext = this;
         }
 
         public void FillList()
         {
-            for (int i = 0; i < 20; i++)
-            {
-                Projects.Add($"Проект {i + 1}");
-            }
+            App.Database.AddProject(new Project());
         }
 
         private async void lwProjectsItemSelected(object sender, SelectedItemChangedEventArgs e)

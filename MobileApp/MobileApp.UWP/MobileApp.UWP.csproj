@@ -145,12 +145,12 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.12"/>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.12" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MobileApp\MobileApp.csproj">
-      <Project>{11FB04F3-05F0-4DE8-B1FE-43A90572F980}</Project>
+      <Project>{5420E55C-B38D-4A0E-95A3-53026E5A1EB5}</Project>
       <Name>MobileApp</Name>
     </ProjectReference>
   </ItemGroup>

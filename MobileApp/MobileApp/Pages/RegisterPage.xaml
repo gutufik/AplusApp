@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Visual="Material"
+             x:Class="MobileApp.RegisterPage">
+    <ContentPage.ToolbarItems >
+        <ToolbarItem Text="fwfwf"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <StackLayout>
+                    <Entry x:Name="loginEntry" Keyboard="Email" Placeholder="Логин"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Entry x:Name="emailEntry" Placeholder="E-mail"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Entry x:Name="passwordEntry" IsPassword="True" Placeholder="Пароль"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Entry x:Name="repeatPasswordEntry" IsPassword="True" Placeholder="Пароль"/>
+                </StackLayout>
+
+                <Button Text="Зарегистриоваться" Clicked="btnSignUpClicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

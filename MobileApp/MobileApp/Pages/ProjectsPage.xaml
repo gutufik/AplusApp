@@ -11,8 +11,12 @@
             </ToolbarItem.IconImageSource>
         </ToolbarItem>
     </ContentPage.ToolbarItems>
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+            <Label Text="Проекты" Style="{StaticResource TitleStyle}"></Label>
+        </StackLayout>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
-
         <StackLayout>
             <ListView x:Name="lwProjects"
               HasUnevenRows="True"

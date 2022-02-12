@@ -14,11 +14,18 @@ namespace MobileApp
     public partial class SelectedProjectPage : TabbedPage
     {
         Project selectedProject;
+        public string title { get; set; }
         public SelectedProjectPage(Project project)
         {
             InitializeComponent();
-            Title = project.Name;
+            title = project.Name;
             selectedProject = project;
+
+            Children.Add(new AboutProjectPage(project));
+            Children.Add(new ImagesPage());
+            Children.Add(new ContactsPage(project));
+
+            this.BindingContext = this;
         }
 
         private async void EditProjectClicked(object sender, EventArgs e)

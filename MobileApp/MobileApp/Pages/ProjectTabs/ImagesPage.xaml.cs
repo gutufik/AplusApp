@@ -15,6 +15,7 @@ namespace MobileApp
         public ImagesPage()
         {
             InitializeComponent();
+            Title = "Картинки";
         }
     }
 }

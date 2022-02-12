@@ -11,10 +11,9 @@
             </ToolbarItem.IconImageSource>
         </ToolbarItem>
     </TabbedPage.ToolbarItems>
-    <TabbedPage.Children>
-        <local:AboutProjectPage Title="О проекте"/>
-        <local:ImagesPage Title="Картинки"/>
-        <local:ContactsPage Title="Контакты"/>
-    </TabbedPage.Children>
-    
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+            <Label Text="{Binding title}" Style="{StaticResource TitleStyle}"></Label>
+        </StackLayout>
+    </NavigationPage.TitleView>
 </TabbedPage>

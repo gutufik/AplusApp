@@ -18,7 +18,6 @@ namespace MobileApp
         {
             InitializeComponent();
             selectedProject = project;
-            Title = "Изменить проект";
             projectNameEntry.Text = selectedProject.Name;
             projectDescEntry.Text = selectedProject.Description;
             phoneEntry.Text = selectedProject.PhoneNumber;

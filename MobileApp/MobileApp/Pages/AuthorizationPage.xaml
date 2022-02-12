@@ -6,22 +6,7 @@
              x:Class="MobileApp.AuthorizationPage">
 
     <ContentPage.Resources>
-        <ResourceDictionary>
-            <Style TargetType="Button">
-                <Setter Property="TextColor" Value="White" />
-                <Setter Property="BackgroundColor" Value="#00B2FF" />
-                <Setter Property="FontSize" Value="11" />
-                <Setter Property="CornerRadius" Value="200"/>
-                <Setter Property="WidthRequest" Value="170"/>
-                <Setter Property="HeightRequest" Value="49"/>
-                <Setter Property="Margin" Value="12,25"/>
-            </Style>
-            <Style TargetType="Entry">
-                <Setter Property="BackgroundColor" Value="#E8E8E8"/>
-                <Setter Property="Margin" Value="50,10,50,20" />
-                <Setter Property="HeightRequest" Value="60"/>
-            </Style>
-        </ResourceDictionary>
+        
     </ContentPage.Resources>
     
     <StackLayout>

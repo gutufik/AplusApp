@@ -3,9 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Visual="Material"
              x:Class="MobileApp.RegisterPage">
-    <ContentPage.ToolbarItems >
-        <ToolbarItem Text="fwfwf"/>
-    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
             <StackLayout>

@@ -16,6 +16,7 @@ namespace MobileApp
         public AddProjectPage()
         {
             InitializeComponent();
+            Title = "Создать проект";
         }
 
         private async void btnCancel_Clicked(object sender, EventArgs e)

@@ -15,6 +15,7 @@ namespace MobileApp
         public RegisterPage()
         {
             InitializeComponent();
+            Title = "Регистрация";
         }
         private async void btnSignUpClicked(object sender, EventArgs e)
         {

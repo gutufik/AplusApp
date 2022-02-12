@@ -19,6 +19,7 @@ namespace MobileApp
         public ProjectsPage()
         {
             InitializeComponent();
+            Title = "Проекты";
             Projects = App.Database.GetProjects();
             this.BindingContext = this;
         }

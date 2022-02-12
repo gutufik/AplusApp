@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using MobileApp.DataBase;
 
 namespace MobileApp
 {
@@ -15,6 +16,26 @@ namespace MobileApp
         public AddProjectPage()
         {
             InitializeComponent();
+        }
+
+        private async void btnCancel_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
+
+        private async void btnAdd_Clicked(object sender, EventArgs e)
+        {
+            Project project = new Project() 
+            {
+                Name = projectNameEntry.Text,
+                Description = projectDescEntry.Text,
+                Email = emailEntry.Text,
+                PhoneNumber = phoneEntry.Text,
+                Address = addressEntry.Text
+            };
+            App.Database.AddProject(project);
+
+            await Navigation.PushAsync(new ProjectsPage());
         }
     }
 }

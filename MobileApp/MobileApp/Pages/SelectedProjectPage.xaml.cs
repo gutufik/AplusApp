@@ -6,21 +6,24 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using MobileApp.DataBase;
 
 namespace MobileApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SelectedProjectPage : TabbedPage
     {
-        public SelectedProjectPage(string projectName)
+        Project selectedProject;
+        public SelectedProjectPage(Project project)
         {
             InitializeComponent();
-            Title = projectName;
+            Title = project.Name;
+            selectedProject = project;
         }
 
         private async void EditProjectClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new EditProjectPage());
+            await Navigation.PushAsync(new EditProjectPage(selectedProject));
         }
     }
 }

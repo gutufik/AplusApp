@@ -6,15 +6,15 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout>
-                <Entry Placeholder="Имя проекта"/>
-                <Editor Placeholder="Описание"/>
-                <Entry Placeholder="Телефон №1"/>
-                <Entry Placeholder="E-mail"/>
-                <Entry Placeholder="Адрес"/>
+                <Entry x:Name="projectNameEntry" Placeholder="Имя проекта"/>
+                <Editor x:Name="projectDescEntry" Placeholder="Описание"/>
+                <Entry x:Name="phoneEntry" Placeholder="Телефон №1"/>
+                <Entry x:Name="emailEntry" Placeholder="E-mail"/>
+                <Entry x:Name="addressEntry" Placeholder="Адрес"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
-                <Button Text="Отмена"/>
-                <Button Text="Добавить"/>
+                <Button x:Name="btnCancel" Text="Отмена" Clicked="btnCancel_Clicked"/>
+                <Button x:Name="btnAdd" Text="Добавить" Clicked="btnAdd_Clicked"/>
             </StackLayout>
         </StackLayout>
         

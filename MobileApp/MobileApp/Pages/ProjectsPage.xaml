@@ -14,7 +14,22 @@
     <ContentPage.Content>
 
         <StackLayout>
-            <ListView x:Name="lwProjects" ItemsSource="{Binding Projects}" ItemSelected="lwProjectsItemSelected"/>
+            <ListView x:Name="lwProjects"
+              HasUnevenRows="True"
+              ItemsSource="{Binding Projects}"
+                      ItemSelected="lwProjectsItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout>
+                                    <Label Text="{Binding Name}" FontSize="18" />
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

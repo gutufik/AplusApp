@@ -53,5 +53,9 @@ namespace MobileApp.DataBase
                 return database.Insert(project);
             }
         }
+        public int DeleteProject(int id)
+        {
+            return database.Delete<Project>(id);
+        }
     }
 }

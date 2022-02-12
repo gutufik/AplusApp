@@ -30,7 +30,7 @@ namespace MobileApp
 
         private async void lwProjectsItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            await Navigation.PushAsync(new SelectedProjectPage(lwProjects.SelectedItem.ToString()));
+            await Navigation.PushAsync(new SelectedProjectPage(lwProjects.SelectedItem as Project));
         }
 
         private async void AddProjectClicked(object sender, EventArgs e)

@@ -16,7 +16,7 @@
                 </StackLayout>
 
                 <StackLayout>
-                    <Entry x:Name="emailEntry" Placeholder="E-mail"/>
+                    <Entry x:Name="emailEntry" Placeholder="E-mail" Keyboard="Email"/>
                 </StackLayout>
 
                 <StackLayout>

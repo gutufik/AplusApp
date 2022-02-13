@@ -22,6 +22,7 @@
                 <Setter Property="BackgroundColor" Value="#E8E8E8"/>
                 <Setter Property="Margin" Value="50,10,50,20" />
                 <Setter Property="HeightRequest" Value="120"/>
+                <Setter Property="AutoSize" Value="Disabled"/>
             </Style>
             <Style TargetType="Label" x:Key="TitleStyle">
                 <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>

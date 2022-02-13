@@ -13,8 +13,8 @@
             <StackLayout>
                 <Entry x:Name="projectNameEntry" Placeholder="Имя проекта"/>
                 <Editor x:Name="projectDescEntry" Placeholder="Описание"/>
-                <Entry x:Name="phoneEntry" Placeholder="Телефон №1"/>
-                <Entry x:Name="emailEntry" Placeholder="E-mail"/>
+                <Entry x:Name="phoneEntry" Placeholder="Телефон №1" Keyboard="Telephone"/>
+                <Entry x:Name="emailEntry" Placeholder="E-mail" Keyboard="Email"/>
                 <Entry x:Name="addressEntry" Placeholder="Адрес"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
